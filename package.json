@@ -1,8 +1,8 @@
 {
   "name": "simple-react-router-proj",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Practice with react router",
+  "main": "App.jsx",
   "dependencies": {
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
