@@ -1,11 +1,11 @@
 # simple-react-router-practice
-A project to get better at using react router
+A simple project to get better at using react router
 
 
-##Setting Things Up (and understanding Babel and Webpack)
+###Setting Things Up (and understanding Babel and Webpack)
 First things first: let's set up all the things we need to make our code work.
 
-Let's start off with setting up Node:
+Let's start off with intializing Node:
 
 ```
 npm init -y
@@ -71,12 +71,13 @@ React.createElement(
 )
 ```
 
+[Using this online Babel compiler you can see for yourself how some specific JSX is converted into JavaScript](https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-0&code=function%20hello()%20%7B%0A%20%20return%20%3Cdiv%3EHello%20world!%3C%2Fdiv%3E%3B%0A%7D "BabelJS REPL")
+
 Next is Webpack
 
 ```
 npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react --save
 ```
 
-[Using this online Babel compiler you can see for yourself how some specific JSX is converted into JavaScript](https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-0&code=function%20hello()%20%7B%0A%20%20return%20%3Cdiv%3EHello%20world!%3C%2Fdiv%3E%3B%0A%7D "BabelJS REPL")
 
 It's important to understand first what React Router is (and isn't). 
