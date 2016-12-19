@@ -1,4 +1,4 @@
-# simple-react-router-practice
+# Simple-React-Router-Practice
 A simple project to get better at using react router
 
 
@@ -74,6 +74,25 @@ React.createElement(
 [Using this online Babel compiler you can see for yourself how some specific JSX is converted into JavaScript](https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-0&code=function%20hello()%20%7B%0A%20%20return%20%3Cdiv%3EHello%20world!%3C%2Fdiv%3E%3B%0A%7D "BabelJS REPL")
 
 Next is Webpack
+
+![alt text](http://i.imgur.com/wfQHwCg.png "Hopefully this makes things clearer")
+
+Webpack is both a build tool and a module bundler. Basically what it does is that, starting with the 'entry' in the `webpack.config.js` file, it starts grabbing all the relevant files and smooshes them together into a custom `bundle.js` file. This is nice because it lets us keep all our code nicely seperated into different files to keep things organized while in development and then makes our life (and the computer's) easier by having everything necessary in one place when actually testing our applications out or putting them into production.
+
+It also lets us use `require()` on non-code files, like a png file (a.k.a. picture), as well. It treats all the files as 'modules' as well, not just the javascript files. CSS, any image files, etc.
+
+Honestly, I'm still unsure of all the things webpack is doing. I'd recommend reading these blogs for some more insight:
+
+http://blog.andrewray.me/webpack-when-to-use-and-why/
+
+https://blog.madewithlove.be/post/webpack-your-bags/
+
+Also, check out the webpack dev docs:
+
+http://webpack.github.io/docs/what-is-webpack.html
+
+
+Now that we have a better idea of the tools we're using, let's intall them!
 
 ```
 npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react --save
