@@ -30,8 +30,8 @@ let fancyFunc = () => console.log("I love ES6!!!");
 and translates it to something most web browsers can universally understand:
 
 ```
-var fancyFunc = function() {
-    console.log("I love ES6!!!");
+var fancyFunc = function fancyFunc() {
+  return console.log("I love ES6!!!");
 };
 ```
 
@@ -98,5 +98,15 @@ Now that we have a better idea of the tools we're using, let's intall them!
 npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react --save
 ```
 
+We should discuss what routing
+
+There are two parts to a route: there's a map and a action.
+
+The map could take the forms of a physical map, or even street signs.
+
+if you're driving from point a to point b, you need to find the best route possible right? but the action tells you what you need to do to get from the source to the destination
+
+in the context of web app or website; the map is defined in our applications. Using what's called a DNS(a Domain Specific Language). Every router system(framework, or libraray) asks you to map routes in their own specific way. React asks you to 
 
 It's important to understand first what React Router is (and isn't). 
+
